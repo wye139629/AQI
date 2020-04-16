@@ -1,10 +1,18 @@
 .bg{
-height: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgcontainer{
+width: 1000px;
+height: 640px;
+margin-top: 50px;
 background-color: rgba(247, 244, 244, 0.993);
+/*
 display: flex;
 justify-content: center;
 align-items: flex-start;
-
+*/
 }
 
 .head{
@@ -60,4 +68,99 @@ font-weight: bold;
 }
 .time{
 padding-top:5px;
+}
+.content{
+    display: flex;
+}
+.content>.box{
+    width: 270px;
+    margin:10px;
+    margin-left: 20px;
+   
+}
+.area{
+    border: 2px solid black;
+    width: 270px;
+    height: 65px;
+    
+    
+}
+.area td{
+    border: 2px solid black;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.area td:nth-child(2){
+    background-color: #FF5959;
+}
+.vbox{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 266px;
+    height: 310px;
+    padding-top: 10px;
+    
+}
+
+.value{
+   margin-left: auto;
+   margin-right: auto;
+   height: 300px;
+    font-size: 17px;
+    width: 240px;
+    
+    
+}
+.value tr{
+    border-bottom: 1px solid black;
+}
+.value tr:nth-last-child(1){
+    border-bottom: none;
+}
+
+.value td:nth-child(1){
+    text-align:justify;
+    vertical-align: middle;
+    padding: 15px;
+    font-weight: bolder;
+
+}
+.value td:nth-child(3){
+    text-align:end;
+    vertical-align: middle;
+    padding: 15px;
+    font-weight: bolder;
+}
+.a{
+    border: 2px solid black;
+    width: 270px;
+    height: 65px;
+    margin-bottom: 30px;
+}
+.a td{
+    border: 2px solid black;
+    text-align:center;
+    vertical-align: middle;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.copyright{
+    border: 1px solid black;
+    margin-top: 30px;
+    height:30px;
+    background: black;
+    color: white;
+    flex:none;
+    display: flex;
+}
+.sourse{
+    margin-top: 5px;
+    margin-left: 70px;
+}
+.cy{
+    margin-top: 5px;
+    margin-left: 400px;
 }

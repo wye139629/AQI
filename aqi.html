@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./aqi.css">
 </head>
 <body>
-    <div class="bg">  
-        <div class="container">
-            <div class="head">
-                <div class="title">
-                    <header>空氣品質指標(AQI)</header>
-                    <select class="select-area" >
+    <div class="bg"> 
+        <div class="bgcontainer">  
+            <div class="container">
+                <div class="head">
+                    <div class="title">
+                        <header>空氣品質指標(AQI)</header>
+                        <select class="select-area" >
                         <option disabled selected value>請選擇地區</option>
                         <option value="前金">前金</option>
                         <option value="楠梓">楠梓</option>
@@ -21,116 +22,133 @@
                         <option value="復興">復興</option>
                         <option value="前鎮">前鎮</option>
                         <option value="小港">小港</option>
-                    </select>
+                        </select>
+
+                    </div>
+                    <div class="tab1">
+                        <table class="standard">
+                            <tr>
+                                <td bgcolor="#ABFFAB">0~50</td>
+                                <td bgcolor="#FFFFAB">51~100</td>
+                                <td bgcolor="#FFC559">101~150</td>
+                                <td bgcolor="#FF5959">151-200</td>
+                                <td bgcolor="#B959FF">201~300</td>
+                                <td bgcolor="#AD00AD">301~400</td>
+                            </tr>
+                            <tr>
+                                <td>良好</td>
+                                <td>普通</td>
+                                <td>對敏感族群不健康</td>
+                                <td>對所有族群不健康</td>
+                                <td>非常不健康</td>
+                            <td>危害</td>
+                            </tr>
+                        </table>
+                    </div>
 
                 </div>
-                <div class="tab1">
-                    <table class="standard">
-                        <tr>
-                            <td bgcolor="#ABFFAB">0~50</td>
-                            <td bgcolor="#FFFFAB">51~100</td>
-                            <td bgcolor="#FFC559">101~150</td>
-                            <td bgcolor="#FF5959">151-200</td>
-                            <td bgcolor="#B959FF">201~300</td>
-                            <td bgcolor="#AD00AD">301~400</td>
-                        </tr>
-                        <tr>
-                            <td>良好</td>
-                            <td>普通</td>
-                            <td>對敏感族群不健康</td>
-                            <td>對所有族群不健康</td>
-                            <td>非常不健康</td>
-                        <td>危害</td>
-                        </tr>
-                    </table>
+                <div class="city">
+                    <div class="cityname"> 高雄市</div>
+                    <hr id="dash"></hr>
+                    <div class="time">2019-01-24 14:00 更新</div>
                 </div>
-
-            </div>
-            <div class="city">
-                <div class="cityname"> 高雄市</div>
-                <hr id="dash"></hr>
-                <div class="time">2019-01-24 14:00 更新</div>
-            </div>
-            <div class="content">
-                <div class="c1"> 
-                    <table class="area aqi">
-                    <tr>
-                        <td>前金</td>
-                        <td>156</td>
-                    </tr>
-                    <tr>
-                        <td>臭氧</td>
-                        <td>82</td>
-                    </tr>
-                    <tr>
-                        <td>懸浮微粒</td>
-                        <td>72</td>
-                    </tr>
-                    <tr>
-                        <td>細懸浮微粒</td>
-                        <td>67</td>
-                    </tr>
-                    <tr>
-                        <td>一氧化碳</td>
-                        <td>0.49</td>
-                    </tr>
-                    <tr>
-                        <td>二氧化硫</td>
-                        <td>3.4</td>
-                    </tr>
-                    <tr>
-                        <td>二氧化氮</td>
-                        <td>13</td>
-                    </tr>
-                    </table>
-                </div>
-                <div class="c2">
-                    <table class="a1">
+                <div class="content">
+                    <div class="box"> 
+                        <table class="area">
                         <tr>
                             <td>前金</td>
                             <td>156</td>
                         </tr>
-                    </table>
-                    <table class="a2">
-                        <tr>
-                            <td>楠梓</td>
-                            <td>206</td>
-                        </tr>
-                    </table>
-                    <table class="a3">
-                        <tr>
-                            <td>仁武</td>
-                            <td>158</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="c3">
-                    <table class="a4">
-                        <tr>
-                            <td>復興</td>
-                            <td>159</td>
-                        </tr>
-                    </table>
-                    <table class="a5">
-                        <tr>
-                            <td>前鎮</td>
-                            <td>145</td>
-                        </tr>
-                    </table>
-                    <table class="a6">
-                        <tr>
-                            <td>小港</td>
-                            <td>126</td>
-                        </tr>
-                    </table>
-                </div>
+                        </table>
+                        <div class="vbox">
+                            <table class="value">
+                            <tr>
+                                <td>臭氧</td>
+                                <td>    </td>
+                            
+                                <td>82</td>
+                            </tr>
+                            <tr>
+                                <td>懸浮微粒</td>
+                                <td>    </td>
+                            
+                                <td>72</td>
+                            </tr>
+                            <tr>
+                                <td>細懸浮微粒</td>
+                                <td>    </td>
+                            
+                                <td>67</td>
+                            </tr>
+                            <tr>
+                                <td>一氧化碳</td>
+                                <td>  </td>
+                            
+                                <td>0.49</td>
+                            </tr>
+                            <tr>
+                                <td>二氧化硫</td>
+                                <td>  </td>
+                            
+                                <td>3.4</td>
+                            </tr>
+                            <tr>
+                                <td>二氧化氮</td>
+                                <td>  </td>
+                                <td>13</td>
+                            </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <table class="a">
+                            <tr>
+                                <td>前金</td>
+                                <td bgcolor="#FF5959">156</td>
+                            </tr>
+                        </table>
+                        <table class="a">
+                            <tr>
+                                <td>楠梓</td>
+                                <td bgcolor="#B959FF">206</td>
+                            </tr>
+                        </table>
+                        <table class="a">
+                            <tr>
+                                <td>仁武</td>
+                                <td bgcolor="#FF5959">158</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="box">
+                        <table class="a">
+                            <tr>
+                                <td>復興</td>
+                                <td bgcolor="#FF5959">159</td>
+                            </tr>
+                        </table>
+                        <table class="a">
+                            <tr>
+                                <td>前鎮</td>
+                                <td bgcolor="#FFC559">145</td>
+                            </tr>
+                        </table>
+                        <table class="a">
+                            <tr>
+                                <td>小港</td>
+                                <td bgcolor="#FFC559">126</td>
+                            </tr>
+                        </table>
+                    </div>
 
+                </div>
             </div>
+            <footer class="copyright">
+                <div class="sourse">資料來源:行政院環境保護署</div>
+                <div class="cy">copyright @ 2019 HexSchool.All rights reserved</div>
+            </footer>
         </div>
-    </div>
-    <footer class="copyright">
-        <div>資料來源:行政院環境保護署</div>
-        <div>copyright @ 2019 HexSchool.All rights reserved</div>
-    </footer>
+        
+    </div> 
 </body>
 </html>
