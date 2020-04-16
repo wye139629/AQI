@@ -1,0 +1,63 @@
+.bg{
+height: 100vw;
+background-color: rgba(247, 244, 244, 0.993);
+display: flex;
+justify-content: center;
+align-items: flex-start;
+
+}
+
+.head{
+display: flex;
+margin-bottom: 20px;
+margin-top: 30px;
+}
+.title{
+margin-top: 25px;
+margin-left: 25px;
+margin-right: 50px;
+margin-bottom: 10px;
+font-size: 30px;
+font-weight: bold;
+}
+.select-area{
+    margin-top: 20px;
+    border:2px solid black;
+    border-radius: 1rem;
+    width: 250px;
+    height: 35px;
+    padding: 5px;
+    font-size: 15px;
+}
+.tab1{
+    margin-top: 25px;
+}
+.tab1 td{
+    
+    border:2px solid black;
+    width:80px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5px;
+    font-size:15px;
+    font-weight: bold;
+}
+.city{
+    display: flex;
+    font-weight: bolder;
+   
+    vertical-align: middle;
+    margin-left: 25px;
+}
+#dash{
+    flex:auto;
+    border-top: 1px dashed black;
+    margin: 15px;
+}
+.cityname{
+    font-size: 25px;
+}
+.time{
+padding-top:5px;
+}
